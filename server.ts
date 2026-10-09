@@ -893,8 +893,11 @@ async function startServer() {
   }
 
   app.listen(PORT, "0.0.0.0", () => {
-    console.log(`🚀 Rydex server running on http://0.0.0.0:${PORT}`);
+    console.log(`🚀 Rydex server running at http://localhost:${PORT}`);
   });
 }
 
-startServer();
+startServer().catch((error) => {
+  console.error("Failed to start Rydex server:", error);
+  process.exitCode = 1;
+});
