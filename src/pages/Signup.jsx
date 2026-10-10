@@ -312,7 +312,7 @@ function Signup() {
                   required
                   value={formData.username}
                   onChange={handleChange}
-                  className="w-full px-3.5 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-xs font-medium focus:ring-2 focus:ring-blue-600 focus:bg-white outline-none"
+                  className="w-full px-3.5 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-xs font-medium text-slate-900 placeholder-slate-400 focus:ring-2 focus:ring-blue-600 focus:bg-white outline-none"
                   placeholder="e.g. rahul_kumar"
                 />
               </div>
@@ -327,7 +327,7 @@ function Signup() {
                   required
                   value={formData.name}
                   onChange={handleChange}
-                  className="w-full px-3.5 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-xs font-medium focus:ring-2 focus:ring-blue-600 focus:bg-white outline-none"
+                  className="w-full px-3.5 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-xs font-medium text-slate-900 placeholder-slate-400 focus:ring-2 focus:ring-blue-600 focus:bg-white outline-none"
                   placeholder="As per Government ID"
                 />
               </div>
@@ -344,7 +344,7 @@ function Signup() {
                 required
                 value={formData.email}
                 onChange={handleChange}
-                className="w-full px-3.5 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-xs font-medium focus:ring-2 focus:ring-blue-600 focus:bg-white outline-none"
+                className="w-full px-3.5 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-xs font-medium text-slate-900 placeholder-slate-400 focus:ring-2 focus:ring-blue-600 focus:bg-white outline-none"
                 placeholder="name@example.com"
               />
             </div>
@@ -365,7 +365,7 @@ function Signup() {
                   maxLength={10}
                   value={formData.mobileNumber}
                   onChange={handleChange}
-                  className="w-full pl-11 pr-3 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-xs font-medium focus:ring-2 focus:ring-blue-600 focus:bg-white outline-none"
+                  className="w-full pl-11 pr-3 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-xs font-medium text-slate-900 placeholder-slate-400 focus:ring-2 focus:ring-blue-600 focus:bg-white outline-none"
                   placeholder="10-digit mobile number"
                 />
               </div>
@@ -386,7 +386,7 @@ function Signup() {
                   maxLength={10}
                   value={formData.alternateMobileNumber}
                   onChange={handleChange}
-                  className="w-full pl-11 pr-3 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-xs font-medium focus:ring-2 focus:ring-blue-600 focus:bg-white outline-none"
+                  className="w-full pl-11 pr-3 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-xs font-medium text-slate-900 placeholder-slate-400 focus:ring-2 focus:ring-blue-600 focus:bg-white outline-none"
                   placeholder="Emergency / family mobile"
                 />
               </div>
@@ -409,7 +409,7 @@ function Signup() {
                     required
                     value={formData.address}
                     onChange={handleChange}
-                    className="w-full px-3 py-2 bg-white border border-slate-200 rounded-xl text-xs outline-none focus:ring-2 focus:ring-blue-600"
+                    className="w-full px-3 py-2 bg-white border border-slate-200 rounded-xl text-xs text-slate-900 placeholder-slate-400 outline-none focus:ring-2 focus:ring-blue-600"
                     placeholder="House/Flat No, Landmark, City, Pincode"
                   />
                 </div>
@@ -426,7 +426,7 @@ function Signup() {
                       maxLength={14}
                       value={formData.aadhaarNumber}
                       onChange={handleChange}
-                      className="w-full px-3 py-2 bg-white border border-slate-200 rounded-xl text-xs font-mono outline-none focus:ring-2 focus:ring-blue-600"
+                      className="w-full px-3 py-2 bg-white border border-slate-200 rounded-xl text-xs font-mono text-slate-900 placeholder-slate-400 outline-none focus:ring-2 focus:ring-blue-600"
                       placeholder="12-digit Aadhaar"
                     />
                   </div>
@@ -441,7 +441,7 @@ function Signup() {
                       required
                       value={formData.drivingLicenseNumber}
                       onChange={handleChange}
-                      className="w-full px-3 py-2 bg-white border border-slate-200 rounded-xl text-xs uppercase font-mono outline-none focus:ring-2 focus:ring-blue-600"
+                      className="w-full px-3 py-2 bg-white border border-slate-200 rounded-xl text-xs uppercase font-mono text-slate-900 placeholder-slate-400 outline-none focus:ring-2 focus:ring-blue-600"
                       placeholder="e.g. TS09 20210084321"
                     />
                   </div>
@@ -461,7 +461,7 @@ function Signup() {
                   required
                   value={formData.password}
                   onChange={handleChange}
-                  className="w-full px-3.5 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-xs outline-none focus:ring-2 focus:ring-blue-600 focus:bg-white"
+                  className="w-full px-3.5 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-xs text-slate-900 placeholder-slate-400 outline-none focus:ring-2 focus:ring-blue-600 focus:bg-white"
                   placeholder="Min 6 characters"
                 />
               </div>
@@ -476,7 +476,7 @@ function Signup() {
                   required
                   value={formData.confirmPassword}
                   onChange={handleChange}
-                  className="w-full px-3.5 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-xs outline-none focus:ring-2 focus:ring-blue-600 focus:bg-white"
+                  className="w-full px-3.5 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-xs text-slate-900 placeholder-slate-400 outline-none focus:ring-2 focus:ring-blue-600 focus:bg-white"
                   placeholder="Re-enter password"
                 />
               </div>
