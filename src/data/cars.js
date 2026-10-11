@@ -4,6 +4,13 @@ import nexonEV from "../assets/images/nexon_ev.jpeg";
 import camry from "../assets/images/camry.jpeg";
 import nexon from "../assets/images/nexon.jpeg";
 import mongoApi from "../services/mongoApi";
+const bundledImagesByFilename = {
+  "innova.jpeg": innova,
+  "creta.jpeg": creta,
+  "nexon_ev.jpeg": nexonEV,
+  "camry.jpeg": camry,
+  "nexon.jpeg": nexon,
+};
 
 const initialCars = [
   {
@@ -461,8 +468,13 @@ export function getStoredCars() {
         // Ensure no transmission or car type fields leak in
         return parsed.map((c) => {
           const { transmission, type, freeCancellation, distanceLimit, ...rest } = c;
+          const legacyImageFilename =
+            typeof c.image === "string" && c.image.includes("/src/assets/images/")
+              ? c.image.split(/[?#]/)[0].split("/").pop()
+              : null;
           return {
             ...rest,
+            image: bundledImagesByFilename[legacyImageFilename] || c.image,
             seats: Number(c.seats) === 7 ? 7 : 5, // strictly 5 or 7
             ac: c.ac !== false, // default true unless explicitly false
           };
